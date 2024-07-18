@@ -1,0 +1,177 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,*::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;    
+  background-color: hsla(0, 0%, 0%, 1);
+  background-size: cover;
+  position: relative;
+}
+
+/* Global */
+li{
+  list-style: none;
+}
+
+a{
+text-decoration: none;
+color: hsl(0, 0%, 100%)
+}
+
+a:hover{
+cursor: pointer;
+}
+
+button:hover {
+cursor: pointer;
+}
+
+/* Container */
+.container-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container{
+  width: 90rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.header-h1{
+  color: hsl(0, 0%, 100%);
+  font-size: 4.2rem; 
+}
+
+.game-container__header-h2{
+  color: hsl(0, 0%, 100%);
+  font-size: 3.2rem;   
+}
+
+.round-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.round-moves{
+  color: hsl(0, 0%, 100%);
+  font-size: 2.6rem;   
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 15%;
+}
+
+.round-moves-img{
+  filter: invert(100%);
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Players */
+.players-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.players-box{
+  width: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsla(0, 0%, 10%, 1);
+}
+
+.players__header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  border-bottom: 1px solid hsl(0, 0%, 100%);
+  padding-bottom: .5rem;
+  gap: 2rem;
+}
+
+.players__header__h{
+  width: 100%;
+}
+
+.player-ico{
+  font-size: 3rem;
+}
+
+.players-content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.players__move{
+  width: calc(100% / 3);
+  border: 1px solid hsl(0, 0%, 100%);
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: hsla(0, 0%, 0%, 1);
+}
+
+.players__move:hover{
+  background-color: hsla(0, 0%, 20%, 1);
+  cursor: pointer;
+}
+
+.players__move-img{
+  filter: invert(100%);
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Resets */
+.game-reset{
+  display: none;
+}
+
+.active{
+display: block;
+cursor: pointer;  
+padding: 2rem;
+border-radius: 1rem;
+border: 1px solid hsl(0, 0%, 100%);
+background-color: hsla(0, 0%, 20%, 1);
+}
+
+.active:hover{
+background-color: hsla(0, 0%, 40%, 1);
+}
